@@ -1,6 +1,9 @@
 @import "reset.scss";
 
 /*===== VARIABLES =====*/
+@mixin section-params {
+    min-height: 100vh;
+}
 
 /*===== BASIC CSS =====*/
 html {
@@ -11,4 +14,42 @@ body {
     color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 3.8rem;
+}
+
+/*===== HEADER =====*/
+.header {
+    min-height: 10rem;
+    background-color: #23282e;
+}
+
+.name {
+}
+.burger-menu {
+}
+
+/*===== MAIN=====*/
+.main {
+    .profile {
+        @include section-params;
+        min-height: calc(100vh - 10rem);
+        background-color: #34365e;
+    }
+    .doings {
+        @include section-params;
+        background-color: #774583;
+    }
+    .whoings {
+        @include section-params;
+    }
+    .works {
+        @include section-params;
+        background-color: #1d7f55;
+    }
+}
+
+/*===== FOOTER =====*/
+.footer {
+    min-height: 20rem;
+    position: relative;
+    bottom: 0;
 }
