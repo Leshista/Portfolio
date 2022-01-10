@@ -66,8 +66,8 @@ svg {
         min-height: calc(100vh - 5rem);
         &__divider-top {
             svg {
-                width: calc(130% + 1.3px);
-                height: 100px;
+                width: calc(115% + 1.3px);
+                height: 150px;
                 .shape-fill {
                     fill: #23282e;
                 }
@@ -100,16 +100,36 @@ svg {
     }
     .whoings {
         @include section-params;
+        &__divider-bottom {
+            svg {
+                width: calc(100% + 1.3px);
+                height: 215px;
+                .shape-fill {
+                    fill: #32d08c;
+                }
+            }
+        }
     }
     .works {
         @include section-params;
-        background-color: #1d7f55;
+        background: linear-gradient(0deg, darken(#1d7f55, 20), lighten(#1d7f55, 20));
+        &__divider-bottom {
+            svg {
+                width: calc(100% + 1.3px);
+                height: 121px;
+                transform: rotateY(180deg);
+                transform: rotateX(180deg);
+            }
+            .shape-fill {
+                fill: #100f10;
+            }
+        }
     }
 }
 
 /*===== FOOTER =====*/
 .footer {
-    min-height: 20rem;
+    min-height: 15rem;
     position: relative;
     bottom: 0;
 }
