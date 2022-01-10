@@ -1,1 +1,9 @@
-@import 'reset.scss'
+@import "reset.scss";
+
+/*===== BASIC CSS =====*/
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #100f10;
+}
