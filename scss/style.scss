@@ -64,7 +64,6 @@ svg {
     .profile {
         @include section-params;
         min-height: calc(100vh - 5rem);
-        background: linear-gradient(180deg, #34365e, lighten(#34365e, 15));
         &__divider-top {
             svg {
                 width: calc(130% + 1.3px);
@@ -87,7 +86,7 @@ svg {
     }
     .doings {
         @include section-params;
-        background: linear-gradient(0deg, #fc4a1a, #f7b733);
+        background: linear-gradient(0deg, #fc4a1a, #f7b633);
         &__divider-bottom {
             transform: rotate(0);
             svg {
