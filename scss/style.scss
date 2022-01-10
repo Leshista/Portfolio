@@ -3,6 +3,13 @@
 /*===== VARIABLES =====*/
 @mixin section-params {
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 4.5rem;
+    padding: 0 20vw;
 }
 
 /*===== BASIC CSS =====*/
@@ -16,9 +23,34 @@ body {
     font-size: 3.8rem;
 }
 
+.divider-top {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+svg {
+    position: relative;
+    display: block;
+}
+
 /*===== HEADER =====*/
 .header {
-    min-height: 10rem;
+    min-height: 5rem;
     background-color: #23282e;
 }
 
@@ -31,12 +63,41 @@ body {
 .main {
     .profile {
         @include section-params;
-        min-height: calc(100vh - 10rem);
-        background-color: #34365e;
+        min-height: calc(100vh - 5rem);
+        background: linear-gradient(180deg, #34365e, lighten(#34365e, 15));
+        &__divider-top {
+            svg {
+                width: calc(130% + 1.3px);
+                height: 100px;
+                .shape-fill {
+                    fill: #23282e;
+                }
+            }
+        }
+        &__divider-bottom {
+            svg {
+                width: calc(131% + 1.3px);
+                height: 164px;
+                transform: rotateY(180deg);
+                .shape-fill {
+                    fill: #f7b733;
+                }
+            }
+        }
     }
     .doings {
         @include section-params;
-        background-color: #774583;
+        background: linear-gradient(0deg, #fc4a1a, #f7b733);
+        &__divider-bottom {
+            transform: rotate(0);
+            svg {
+                width: calc(140% + 1.3px);
+                height: 210px;
+                .shape-fill {
+                    fill: #100f10;
+                }
+            }
+        }
     }
     .whoings {
         @include section-params;
