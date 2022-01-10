@@ -1,9 +1,14 @@
 @import "reset.scss";
 
+/*===== VARIABLES =====*/
+
 /*===== BASIC CSS =====*/
 html {
     font-size: 10px;
 }
 body {
     background-color: #100f10;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.8rem;
 }
