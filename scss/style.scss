@@ -197,6 +197,8 @@ svg {
                 border-radius: 50rem;
             }
         }
+        &__text {
+        }
     }
     .doings {
         @include section-params;
