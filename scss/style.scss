@@ -159,6 +159,37 @@ svg {
     }
 }
 
+.text {
+    position: relative;
+    font-size: 5.2rem;
+    line-height: 9rem;
+    &__hello {
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    // &__motto {
+    //     position: absolute;
+    //     top: -25rem;
+    //     font-size: 15rem;
+    //     line-height: 30rem;
+    //     color: rgba(127, 127, 127, 0.2);
+    // }
+
+    &__name {
+        font-weight: 900;
+    }
+
+    &__to-be {
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &__profession {
+    }
+}
+
 /*===== HEADER =====*/
 .header {
     min-height: 5rem;
