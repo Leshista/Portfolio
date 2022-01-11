@@ -146,6 +146,9 @@ svg {
     display: block;
 }
 
+.photo {
+}
+
 /*===== HEADER =====*/
 .header {
     min-height: 5rem;
@@ -186,6 +189,12 @@ svg {
                 .shape-fill {
                     fill: #f7b733;
                 }
+            }
+        }
+        &__photo {
+            img {
+                max-width: 100vw;
+                border-radius: 50rem;
             }
         }
     }
@@ -239,3 +248,5 @@ svg {
     position: relative;
     bottom: 0;
 }
+
+@import "media";
