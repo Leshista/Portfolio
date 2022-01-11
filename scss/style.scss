@@ -147,6 +147,16 @@ svg {
 }
 
 .photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__placeholder {
+        position: absolute;
+        font-size: 2em;
+        color: rgba(127, 127, 127, 0.4);
+        transform: rotate(-45deg);
+    }
 }
 
 /*===== HEADER =====*/
