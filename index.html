@@ -6,24 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/style.css" />
+        <!-- Connecting google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- This sans-serif one for general purposes -->
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
             rel="stylesheet"
         />
+        <!-- And this monospace one for the typing animation -->
         <link
             href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
+        <!-- ===== HEADER ===== -->
         <header class="header">
-            <div class="name-typing"></div>
+            <div class="name-typing">
+                <!-- Leaving this div empty due to all the content added through ::before pseudo-element -->
+            </div>
             <div class="burger-menu"></div>
         </header>
+        <!-- ===== MAIN ===== -->
         <main class="main">
+            <!-- === Profile === -->
             <section class="profile">
+                <!-- Adding curves that were done with the help from this site: https://www.shapedivider.app -->
                 <div class="profile__divider-top divider-top">
                     <svg
                         data-name="Layer 1"
@@ -63,6 +72,7 @@
                     </svg>
                 </div>
             </section>
+            <!-- === Doings === -->
             <section class="doings">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat, debitis.
@@ -80,6 +90,7 @@
                     </svg>
                 </div>
             </section>
+            <!-- === Whoings === -->
             <section class="whoings">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat, debitis.
@@ -107,6 +118,7 @@
                     </svg>
                 </div>
             </section>
+            <!-- === Works === -->
             <section class="works">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Placeat, debitis.
@@ -125,6 +137,7 @@
                 </div>
             </section>
         </main>
+        <!-- ===== FOOTER ===== -->
         <footer class="footer"></footer>
         <script src="js/script.js"></script>
     </body>
