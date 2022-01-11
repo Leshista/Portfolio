@@ -243,6 +243,8 @@ svg {
     }
     .doings {
         @include section-params;
+        flex-direction: column;
+        justify-content: flex-start;
         background: linear-gradient(0deg, #fc4a1a, #f7b633);
         &__divider-bottom {
             transform: rotate(0);
@@ -254,7 +256,14 @@ svg {
                 }
             }
         }
+        .technologies {
+            &__items {
+            }
+        }
+        .title {
+        }
     }
+
     .whoings {
         @include section-params;
         &__divider-bottom {
