@@ -245,6 +245,7 @@ svg {
         @include section-params;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: stretch;
         background: linear-gradient(0deg, #fc4a1a, #f7b633);
         &__divider-bottom {
             transform: rotate(0);
@@ -258,9 +259,22 @@ svg {
         }
         .technologies {
             &__items {
+                display: flex;
+                justify-content: space-between;
             }
         }
         .title {
+        }
+        .technology {
+            flex-direction: column;
+            &__logo {
+                img {
+                    width: 20rem;
+                }
+            }
+
+            &__title {
+            }
         }
     }
 
