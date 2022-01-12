@@ -165,6 +165,9 @@ svg {
     font-size: 4.2rem;
 }
 
+.fixed-height {
+    height: 20rem;
+}
 /*===== HEADER =====*/
 .header {
     min-height: 5rem;
@@ -270,11 +273,16 @@ svg {
                 font-weight: 500;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                &_bottom {
+                    margin-bottom: 15rem;
+                }
             }
         }
         .technology {
             flex-direction: column;
             width: 20rem;
+            margin: 2rem;
             &__logo {
                 img {
                     width: 20rem;
