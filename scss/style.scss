@@ -159,35 +159,10 @@ svg {
     }
 }
 
-.text {
-    position: relative;
-    font-size: 5.2rem;
-    line-height: 9rem;
-    &__hello {
-        font-style: italic;
-        font-weight: 300;
-    }
-
-    // &__motto {
-    //     position: absolute;
-    //     top: -25rem;
-    //     font-size: 15rem;
-    //     line-height: 30rem;
-    //     color: rgba(127, 127, 127, 0.2);
-    // }
-
-    &__name {
-        font-weight: 900;
-    }
-
-    &__to-be {
-        font-size: 1.8rem;
-        font-style: italic;
-        font-weight: 300;
-    }
-
-    &__profession {
-    }
+.title {
+    margin: 4rem 0;
+    font-weight: 900;
+    font-size: 4.2rem;
 }
 
 /*===== HEADER =====*/
@@ -222,6 +197,38 @@ svg {
                 }
             }
         }
+
+        .text {
+            position: relative;
+            font-size: 5.2rem;
+            line-height: 9rem;
+            &__hello {
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            // &__motto {
+            //     position: absolute;
+            //     top: -25rem;
+            //     font-size: 15rem;
+            //     line-height: 30rem;
+            //     color: rgba(127, 127, 127, 0.2);
+            // }
+
+            &__name {
+                font-weight: 900;
+            }
+
+            &__to-be {
+                font-size: 1.8rem;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            &__profession {
+            }
+        }
+
         &__divider-bottom {
             svg {
                 width: calc(131% + 1.3px);
@@ -259,14 +266,15 @@ svg {
         }
         .technologies {
             &__items {
+                font-family: "Cutive Mono", monospace;
+                font-weight: 500;
                 display: flex;
                 justify-content: space-between;
             }
         }
-        .title {
-        }
         .technology {
             flex-direction: column;
+            width: 20rem;
             &__logo {
                 img {
                     width: 20rem;
