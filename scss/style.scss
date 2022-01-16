@@ -239,6 +239,7 @@ svg {
             margin: 0.5rem 0;
         }
         &__left-side {
+            position: relative;
         }
 
         &__logo {
@@ -248,7 +249,8 @@ svg {
         }
 
         &__github-logo {
-            margin-top: 1rem;
+            position: absolute;
+            bottom: 2rem;
             img {
                 max-width: 20%;
             }
