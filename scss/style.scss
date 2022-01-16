@@ -191,7 +191,7 @@ svg {
     &__items {
         font-weight: 500;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         &_bottom {
             margin-bottom: 15rem;
@@ -232,7 +232,7 @@ h2.title {
 }
 
 .fixed-height {
-    height: 15rem;
+    max-height: 15rem;
 }
 
 .flex-nowrap {
