@@ -220,6 +220,52 @@ svg {
     }
 }
 
+.projects {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    &__items {
+    }
+    .project {
+        max-width: 30vw;
+        font-size: 3rem;
+        padding: 2rem;
+        display: flex;
+        background: linear-gradient(135deg, lighten(#100f10, 10), darken(#100f10, 10));
+        border-radius: 2.5rem;
+        .title {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+        }
+        &__left-side {
+        }
+
+        &__logo {
+        }
+
+        &__title {
+        }
+
+        &__github-logo {
+            margin-top: 1rem;
+            img {
+                max-width: 20%;
+            }
+        }
+
+        &__right-side {
+            padding-left: 1rem;
+        }
+
+        &__technologies {
+        }
+    }
+}
+
+.rounded-a-little {
+}
+
 .title {
     margin: 4rem 0;
     font-weight: 900;
@@ -344,6 +390,9 @@ h2.title {
     }
     .works {
         @include section-params;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2.5rem;
         background: linear-gradient(0deg, darken(#1d7f55, 20), lighten(#1d7f55, 20));
         &__divider-bottom {
             svg {
