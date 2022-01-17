@@ -236,6 +236,7 @@ svg {
     .project {
         max-width: 26vw;
         font-size: 2.5rem;
+        line-height: 3.5rem;
         padding: 2.5rem;
         margin: 1rem auto;
         display: flex;
@@ -247,6 +248,7 @@ svg {
         }
         &__left-side {
             position: relative;
+            max-width: 18rem;
         }
 
         &__logo {
@@ -256,7 +258,7 @@ svg {
         }
 
         &__title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-top: 2rem;
         }
 
@@ -269,7 +271,6 @@ svg {
         }
 
         &__right-side {
-            padding-left: 1rem;
         }
 
         &__technologies {
