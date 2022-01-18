@@ -436,6 +436,15 @@ h2.title {
     //Stick it to the bottom of the page
     position: relative;
     bottom: 0;
+    .email {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .links {
+        img {
+            max-width: 5rem;
+        }
+    }
 }
 
 @import "media";
