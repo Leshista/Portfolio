@@ -429,6 +429,9 @@ h2.title {
 
 /*===== FOOTER =====*/
 .footer {
+    @include section-params;
+    flex-direction: column;
+    justify-content: flex-start;
     min-height: 15rem;
     //Stick it to the bottom of the page
     position: relative;
