@@ -356,6 +356,14 @@ h2.title {
 }
 
 .burger-menu {
+    display: none;
+    padding: 2rem;
+    &__stripe {
+        background-color: #32d08c;
+        width: 4rem;
+        height: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
 }
 
 /*===== MAIN=====*/

@@ -51,14 +51,17 @@
 
 @media (max-width: 992px) {
     .header {
-        justify-content: center;
-    }
-    .nav {
-        display: none;
-    }
-    .name-typing {
-        width: fit-content;
-        font-size: 4rem;
+        justify-content: space-between;
+        .name-typing {
+            width: fit-content;
+            font-size: 4rem;
+        }
+        .nav {
+            display: none;
+        }
+        .burger-menu {
+            display: block;
+        }
     }
     .flex-nowrap {
         flex-wrap: wrap;
