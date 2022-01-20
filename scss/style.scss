@@ -113,6 +113,7 @@
 html {
     //Making 1rem = 10px
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #100f10;
@@ -308,9 +309,11 @@ h2.title {
 .header {
     min-height: 5rem;
     background-color: #23282e;
+    display: flex;
 }
 
 .name-typing {
+    width: 25vw;
     font-family: "Cutive Mono", monospace;
     padding: 3rem;
     //Making typing effect through changing pseudo-element's content in the animation
@@ -319,6 +322,18 @@ h2.title {
         animation: typing 4s ease-in 2s infinite alternate;
     }
 }
+.nav {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        font-family: "Cutive Mono", monospace;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
 .burger-menu {
 }
 
