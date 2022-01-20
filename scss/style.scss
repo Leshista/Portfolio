@@ -329,6 +329,14 @@ h2.title {
     display: none;
 }
 
+.position-fixed {
+    position: fixed;
+}
+
+.stripe-active {
+    transform: rotateY(180deg);
+}
+
 /*===== HEADER =====*/
 .header {
     min-height: 5rem;
@@ -360,14 +368,18 @@ h2.title {
 }
 
 .burger {
+    position: fixed;
     display: none;
     padding: 2.5rem;
     z-index: 100;
+    right: 0;
     &__stripe {
         background-color: #32d08c;
         width: 4rem;
         height: 0.7rem;
         margin-bottom: 0.7rem;
+        transition-property: all;
+        transition-duration: 500ms;
     }
 }
 
