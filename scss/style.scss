@@ -490,6 +490,11 @@ h2.title {
     //Stick it to the bottom of the page
     position: relative;
     bottom: 0;
+    .arrow-up {
+        position: absolute;
+        top: -7rem;
+        @include hover-size-increase;
+    }
     .email {
         font-size: 3rem;
         margin-bottom: 2rem;
