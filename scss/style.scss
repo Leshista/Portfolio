@@ -14,6 +14,21 @@
     padding: 0 20vw;
 }
 
+@mixin hover-color-change {
+    transition-property: color;
+    transition-duration: 500ms;
+    &:hover {
+        color: #32d08c;
+    }
+}
+
+@mixin hover-size-increase {
+    transition-property: all;
+    transition-duration: 500ms;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
 /*===== ANIMATIONS =====*/
 // Animation for name-typing div in the header
 @keyframes typing {
@@ -199,6 +214,7 @@ svg {
     &__logo {
         img {
             width: 15rem;
+            @include hover-size-increase;
         }
     }
 
@@ -252,12 +268,14 @@ svg {
             margin-bottom: 1rem;
             img {
                 max-width: 18rem;
+                @include hover-size-increase;
             }
         }
 
         &__title {
             font-size: 3rem;
             margin-top: 2rem;
+            @include hover-color-change;
         }
 
         &__github-logo {
@@ -265,6 +283,7 @@ svg {
             bottom: 1rem;
             img {
                 max-width: 20%;
+                @include hover-size-increase;
             }
         }
 
@@ -332,11 +351,7 @@ h2.title {
         font-family: "Cutive Mono", monospace;
         text-decoration: none;
         color: inherit;
-        transition-property: color;
-        transition-duration: 500ms;
-        &:hover {
-            color: #32d08c;
-        }
+        @include hover-color-change;
     }
 }
 
@@ -408,6 +423,7 @@ h2.title {
                 font-size: 2rem;
                 &__title {
                     font-family: "Open Sans", sans-serif;
+                    @include hover-color-change;
                 }
             }
         }
@@ -457,6 +473,7 @@ h2.title {
         white-space: nowrap;
         img {
             max-width: 5rem;
+            @include hover-size-increase;
         }
     }
 }
