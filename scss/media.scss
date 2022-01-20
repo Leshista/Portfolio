@@ -11,6 +11,12 @@
 }
 
 @media (max-width: 1280px) {
+    .name-typing {
+        font-size: 2.5rem;
+    }
+    .nav__item {
+        font-size: 2.5rem;
+    }
     .technologies {
         .technology {
             &__title {
@@ -44,6 +50,16 @@
 }
 
 @media (max-width: 992px) {
+    .header {
+        justify-content: center;
+    }
+    .nav {
+        display: none;
+    }
+    .name-typing {
+        width: fit-content;
+        font-size: 4rem;
+    }
     .flex-nowrap {
         flex-wrap: wrap;
     }
