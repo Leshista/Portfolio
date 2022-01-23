@@ -245,6 +245,7 @@ svg {
     }
     .project {
         max-width: 26vw;
+        min-height: 30rem;
         font-size: 2.5rem;
         line-height: 3.5rem;
         padding: 2.5rem;
@@ -327,6 +328,7 @@ h2.title {
 
 .hidden {
     opacity: 0;
+    overflow: hidden;
     left: 100vw !important;
 }
 
